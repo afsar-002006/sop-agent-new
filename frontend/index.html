@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOP Agent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>SOP Agent</h1>
+            <p>Upload your SOP documents and ask questions instantly.</p>
+        </header>
+
+        <section class="upload-section">
+            <h2>Upload Document</h2>
+            <form id="uploadForm">
+                <div class="file-input-wrapper">
+                    <input type="file" id="pdfFile" accept=".pdf" required>
+                    <label for="pdfFile">Choose PDF</label>
+                </div>
+                <button type="submit" id="uploadBtn">Upload</button>
+            </form>
+            <div id="uploadStatus"></div>
+        </section>
+
+        <section class="query-section">
+            <h2>Ask a Question</h2>
+            <div class="search-box">
+                <input type="text" id="queryInput" placeholder="What would you like to know?">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div id="resultsArea"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
